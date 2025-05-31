@@ -18,6 +18,4 @@ local avatar = Instance.new("ImageLabel", frame) avatar.Size = UDim2.new(0, 100,
 
 local function CreateToggle(name, y, var) local b = Instance.new("TextButton", frame) b.Size = UDim2.new(0, 300, 0, 40) b.Position = UDim2.new(0.5, -150, 0, y) b.Text = name..": ON" b.Font = Enum.Font.Gotham b.TextColor3 = Color3.new(1,1,1) b.BackgroundColor3 = Color3.fromRGB(45,45,45) b.TextSize = 18 b.MouseButton1Click:Connect(function() _G[var] = not _G[var] b.Text = name..": "..(_G[var] and "ON" or "OFF") end) end
 
-CreateToggle("AutoFarm", 180, "AutoFarm") CreateToggle("IslandESP", 230, "IslandESP") CreateToggle("ESPPlayer", 280, "ESPPlayer") CreateToggle("ChestESP", 330, "ChestESP") CreateToggle("DevilFruitESP", 380, "DevilFruitESP") CreateToggle("FlowerESP", 430, "FlowerESP") CreateToggle("RealFruitESP", 480, "RealFruitESP")
-
--- ℹ️ OBS: Você ainda precisa adicionar as funções reais como CheckQuest, UpdateIslandESP, etc. -- Você pode colar essas funções a partir do script original ("script opensource by tsuo.txt") no final deste script.
+CreateToggle("AutoFarm", 180, "AutoFarm") CreateToggle("IslandESP", 230, "IslandESP") CreateToggle("ESPPlayer", 280, "ESPPlayer") CreateToggle("ChestESP", 330, "ChestESP") CreateToggle("DevilFruitESP", 380, "DevilFruitESP") CreateToggle("FlowerESP", 430, "FlowerESP") CreateToggle("RealFruitESP", 480, "RealFruitESP"
